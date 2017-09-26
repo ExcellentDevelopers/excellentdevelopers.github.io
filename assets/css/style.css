@@ -816,16 +816,28 @@ h2 a{
   color: #819198; }
 
 /****************** Customization *******************/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
+a.project-name{
+  text-decoration: none;
+}
+a.project-name:hover, a.project-name:active, a.project-name:focus{
+    text-decoration: none;
+}
 .title-head{
   background: #FFF;
-  padding: 2em 3em;
+  padding: 2em 50px;
   max-width: 1600px;
   margin: 0 auto;
 }
 .menu-head{
     background: #FFF;
-    padding: 1rem 6rem;
+    padding: 1rem 50px;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -899,55 +911,11 @@ a.page-link:hover, a.page-link:active {
     font-size: 14px;
     color: gray;
 }
-@media screen and (max-width:768px) {
-    .site-nav {
-        position: absolute;
-        top: 9px;
-        right: 15px;
-        background-color: #fdfdfd;
-        border: 1px solid #e8e8e8;
-        border-radius: 5px;
-        text-align: right;
-    }
-    .menu-icon {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 26px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center;
-    }
-    svg path {
-        fill: #424242;
-    }
-    .site-nav input:checked ~ .trigger {
-        padding-top: 20px;
-        display: block;
-        padding-bottom: 5px;
-    }
-    .site-nav input ~ .trigger {
-        clear: both;
-        display: none;
-    }
-    .site-nav label[for="nav-trigger"] {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 36px;
-        z-index: 2;
-        cursor: pointer;
-    }
-    .site-nav .page-link {
-        text-align: center;
-        display: block;
-        padding: 10px 10px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    .site-nav .page-link:before {
-        content: none;
-    }
+.just-mobile{
+    display: none;
+}
+.no-mobile{
+    display: block;
 }
 
 .video-head {
@@ -968,7 +936,6 @@ a.page-link:hover, a.page-link:active {
     margin: 0 auto;
 }
 .video-head-interact{
-    display: block;
     visibility: visible;
     margin: 50px auto;
     width: 80px;
@@ -980,6 +947,7 @@ a.page-link:hover, a.page-link:active {
 }
 .video-head-interact:hover {
     opacity: 1.0;
+    cursor: pointer;
 }
 .click-here-arrow{
     margin: 50px 0 0 -26px;
@@ -1036,6 +1004,11 @@ a.page-link:hover, a.page-link:active {
     margin-left: 10px;
     color: #7d7d7d;
 }
+.color-bg button:hover{
+    background-color: #88b04b;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
 .color-bg h2{
     margin: 0;
 }
@@ -1044,6 +1017,9 @@ a.page-link:hover, a.page-link:active {
 }
 .authors-grid{
     display: block;
+}
+.authors-grid img{
+    margin: 15px 0;
 }
 .inline-columns > div {
     display: inline-block;
@@ -1079,6 +1055,17 @@ a.page-link:hover, a.page-link:active {
     color: #FFF;
     text-decoration: none;
 }
+.mission-video{
+  text-align: center;
+}
+hr.hr-mission {
+  height: 2px;
+  padding: 0;
+  max-width: 1620px;
+  background-color: #eff0f1;
+  border: 0;
+  margin: 35px auto;
+}
 /************************** MailChimp **************************/
 #mc_embed_signup form {
     text-align: center !important;
@@ -1091,7 +1078,6 @@ a.page-link:hover, a.page-link:active {
     border: 2px solid #FFF !important;
     padding: 8px 15px !important;
     color: #7d7d7d;
-    min-width: 300px;
     width: auto !important;
 }
 #mc_embed_signup .button{
@@ -1118,4 +1104,70 @@ a.page-link:hover, a.page-link:active {
 }
 #mc_embed_signup #mce-success-response {
     color: #FFF;
+}
+/********************* Responsivness **************************/
+@media screen and (max-width:768px) {
+    .site-nav {
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        background-color: #fdfdfd;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        text-align: right;
+    }
+    .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+    svg path {
+        fill: #424242;
+    }
+    .site-nav input:checked ~ .trigger {
+        padding-top: 20px;
+        display: block;
+        padding-bottom: 5px;
+    }
+    .site-nav input ~ .trigger {
+        clear: both;
+        display: none;
+    }
+    .site-nav label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 36px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .site-nav .page-link {
+        text-align: center;
+        display: block;
+        padding: 10px 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .site-nav .page-link:before {
+        content: none;
+    }
+    .color-bg input {
+      min-width: 0px;
+    }
+    #mc_embed_signup_scroll {
+        display: block;
+    }
+    #mc_embed_signup .mc-field-group input {
+        margin: 0 auto;
+    }
+    .no-mobile{
+        display: none;
+    }
+    .just-mobile{
+        display: block;
+    }
 }
