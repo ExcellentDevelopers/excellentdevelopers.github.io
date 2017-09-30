@@ -664,8 +664,7 @@ h2 a{
 
 .main-content {
     word-wrap: break-word;
-    min-height: -webkit-calc(100vh - 530px);
-    min-height: calc(100vh - 530px)}
+}
   .main-content :first-child {
     /*margin-top: 0;*/
   }
@@ -1033,9 +1032,13 @@ a.page-link:hover, a.page-link:active {
     width: 75px;
     height: 35px;
 }
+.svg-icon path:hover{
+  fill: #88B04C;
+}
 /*********************** Page Content *********************/
 .page-content .main-content{
     font-size: 1em;
+  display: flow-root;
 }
 .page-content h1{
     background-color: #88b04b;
@@ -1057,6 +1060,16 @@ a.page-link:hover, a.page-link:active {
 }
 .mission-video{
   text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.mission-video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 hr.hr-mission {
   height: 2px;
@@ -1065,6 +1078,63 @@ hr.hr-mission {
   background-color: #eff0f1;
   border: 0;
   margin: 35px auto;
+}
+.post-content h1{
+  background-color: transparent;
+  color: inherit;
+}
+/**************** Posts ****************/
+.post-meta img{
+    max-width: 90px;
+    max-height: 90px;
+    float: left;
+    margin-right: 16px
+}
+.post-meta span{
+    font-weight: bold;
+}
+.post-meta p{
+    color: gray;
+    margin: 5px 0 12px;
+}.post-page hr{
+   margin: 32px 0;
+   background-color: #88b04b;
+}
+.contact-feedback{
+  border: 1px solid #88b04b;
+  background-color: #FFF;
+  color: #88b04b;
+  padding: 15px 20px;
+  font-size: 22px;
+  float: right;
+}
+.contact-feedback:hover, .contact-feedback:active, .contact-feedback:focus{
+  background-color: #88b04b;
+  color: #FFF;
+  text-decoration: none;
+}
+.post-feedback {
+  margin: 0 20px 0 20px;
+}
+.post-feedback h3{
+  float: left;
+}
+.post-tags{
+  text-align: center;
+  margin: 32px 0 0;
+}
+.class-tag{
+  border: 1px solid #88b04b;
+  background-color: #FFF;
+  color: #88b04b;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.class-tag:hover, .class-tag:active, .class-tag:focus{
+  background-color: #88b04b;
+  color: #FFF;
+  text-decoration: none;
 }
 /************************** MailChimp **************************/
 #mc_embed_signup form {
@@ -1104,6 +1174,18 @@ hr.hr-mission {
 }
 #mc_embed_signup #mce-success-response {
     color: #FFF;
+}
+#mc-embedded-subscribe:hover{
+  background-color: #88b04b !important;
+  border: 2px solid #FFF !important;
+  color: #FFF !important;
+}
+@media screen and (max-width: 768px){
+  #mc_embed_signup .button {
+    margin: 10px 0 0 0 !important;
+    width: 12.7em;
+  }
+
 }
 /********************* Responsivness **************************/
 @media screen and (max-width:768px) {
@@ -1170,4 +1252,9 @@ hr.hr-mission {
     .just-mobile{
         display: block;
     }
+}
+@media screen and (max-width: 480px){
+  .authors-grid > div {
+    width: 100%;
+  }
 }

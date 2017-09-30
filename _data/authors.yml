@@ -1,24 +1,29 @@
-- name: Lukas Lukac
+- ID: 1
+  name: Lukas Lukac
   description: konklone hjsbhj;klmzsdf sfdgbhj
   image: lukas.jpg
   web: google.com
 
-- name: Pepito Pelele
+- ID: 2
+  name: Pepito Pelele
   description: parkr dgfj dgftigujklfsdgt msfdg
   image: lukas.jpg
   web: google.com
 
-- name: Lukas Lukac
+- ID: 3
+  name: Lukas Lukac
   description: konklone hjsbhj;klmzsdf sfdgbhj
   image: lukas.jpg
   web: google.com
 
-- name: Pepito Pelele
+- ID: 4
+  name: Pepito Pelele
   description: parkr dgfj dgftigujklfsdgt msfdg
   image: lukas.jpg
   web: google.com
 
-- name: Lukas Lukac
+- ID: 5
+  name: Lukas Lukac
   description: konklone hjsbhj;klmzsdf sfdgbhj
   image: lukas.jpg
   web: google. com

@@ -22,16 +22,14 @@ layout: default
         </div>
         {% endfor %}
     </section>
-
 </div>
 
 <section class="color-bg">
     <h2>Top Authors</h2>
-
 </section>
-<div class="row inline-columns main-content authors-grid">
+<div class="inline-columns main-content authors-grid">
     {% for author in site.data.authors%}
-        <div class="col-xs-3 col-xs-offset-0">
+        <div class="col-sm-3 col-sm-offset-0 col-xs-4 col-xs-offset-0">
             {% include site-authors.html author=author %}
         </div>
     {% endfor %}
