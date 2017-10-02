@@ -830,7 +830,7 @@ a.project-name:hover, a.project-name:active, a.project-name:focus{
 }
 .title-head{
   background: #FFF;
-  padding: 2em 50px;
+  padding: 32px 50px 0;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -844,6 +844,11 @@ a.project-name:hover, a.project-name:active, a.project-name:focus{
   color: #333;
   text-align: left;
   max-width: 1600px;
+}
+.title-head h1{
+  padding-bottom: 25px;
+  border-bottom: 2px solid #eff0f1;
+  width: fit-content;
 }
 hr.hr-head{
   height: 2px;
@@ -861,6 +866,21 @@ hr.hr-head{
 }
 .main-content{
     display: flow-root;
+}
+.title-head span {
+  float: right;
+  /* Safari */
+  -webkit-transform: rotate(7deg);
+  /* Firefox */
+  -moz-transform: rotate(7deg);
+  /* IE */
+  -ms-transform: rotate(7deg);
+  /* Opera */
+  -o-transform: rotate(7deg);
+  margin: -15px 60px 0 0;
+  font-size: 24px;
+  text-decoration: underline;
+  color: gray;
 }
 /*********************** Head **********************/
 .site-header .wrapper{
@@ -1084,6 +1104,15 @@ hr.hr-mission {
   color: inherit;
 }
 /**************** Posts ****************/
+.authors-section{
+  width: 100%;
+  display: inline-block;
+}
+.post-meta {
+  width: 50%;
+  float: left;
+  margin: 20px 0;
+}
 .post-meta img{
     max-width: 90px;
     max-height: 90px;
@@ -1107,20 +1136,31 @@ hr.hr-mission {
   padding: 15px 20px;
   font-size: 22px;
   float: right;
+  margin-top: 16px;
 }
-.contact-feedback:hover, .contact-feedback:active, .contact-feedback:focus{
+.contact-feedback svg{
+  margin: 0 6px -8px;
+  width: 32px;
+  height: 32px;
+  fill: #88b04b;
+}
+.contact-feedback:hover, .contact-feedback:active, .contact-feedback:focus, .contact-feedback:hover svg, .contact-feedback:active svg, .contact-feedback:focus svg{
   background-color: #88b04b;
   color: #FFF;
   text-decoration: none;
+  fill: #FFF;
+}
+.contact-feedback svg:hover{
+  fill: #FFF;
 }
 .post-feedback {
-  margin: 0 20px 0 20px;
+  margin: 0 -15px 0 -15px;
 }
 .post-feedback h3{
   float: left;
 }
 .post-tags{
-  text-align: center;
+  text-align: left;
   margin: 32px 0 0;
 }
 .class-tag{
@@ -1128,13 +1168,20 @@ hr.hr-mission {
   background-color: #FFF;
   color: #88b04b;
   padding: 5px 10px;
-  margin: 5px 10px;
+  margin: -5px 10px 5px;
   text-align: center;
+  display: inline-block;
+}
+.post-tags p{
+  float: left;
 }
 .class-tag:hover, .class-tag:active, .class-tag:focus{
   background-color: #88b04b;
   color: #FFF;
   text-decoration: none;
+}
+.post-collaborators .post-meta{
+  margin: 20px 0;
 }
 /************************** MailChimp **************************/
 #mc_embed_signup form {
@@ -1188,8 +1235,19 @@ hr.hr-mission {
 
 }
 /********************* Responsivness **************************/
+@media screen and (max-width: 1124px) {
+  .title-head span{
+    display: none;
+  }
+}
 @media screen and (max-width:768px) {
-    .site-nav {
+  .title-head h1 {
+    border-bottom: none;
+  }
+  .menu-head {
+    padding: 0;
+  }
+  .site-nav {
         position: absolute;
         top: 9px;
         right: 15px;
@@ -1252,9 +1310,16 @@ hr.hr-mission {
     .just-mobile{
         display: block;
     }
+    .contact-feedback{
+      width: 100%;
+      text-align: center;
+    }
 }
 @media screen and (max-width: 480px){
   .authors-grid > div {
+    width: 100%;
+  }
+  .post-meta {
     width: 100%;
   }
 }

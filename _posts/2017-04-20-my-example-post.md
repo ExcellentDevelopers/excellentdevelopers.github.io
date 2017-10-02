@@ -1,7 +1,7 @@
 ---
 layout: post
 image: Website-example.png
-author-ID: 2
+authorId: 2
 tags: [1, 2, 3]
 contributors: [2, 3, 4]
 ---

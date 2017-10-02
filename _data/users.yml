@@ -1,29 +1,34 @@
-- ID: 1
+- id: 1
   name: Lukas Lukac
   description: konklone hjsbhj;klmzsdf sfdgbhj
   image: lukas.jpg
   web: google.com
+  githubUsername: enchanterio
 
-- ID: 2
+- id: 2
   name: Pepito Pelele
   description: parkr dgfj dgftigujklfsdgt msfdg
   image: lukas.jpg
   web: google.com
+  githubUsername: enchanterio
 
-- ID: 3
+- id: 3
   name: Lukas Lukac
   description: konklone hjsbhj;klmzsdf sfdgbhj
   image: lukas.jpg
   web: google.com
+  githubUsername: enchanterio
 
-- ID: 4
+- id: 4
   name: Pepito Pelele
   description: parkr dgfj dgftigujklfsdgt msfdg
   image: lukas.jpg
   web: google.com
+  githubUsername: enchanterio
 
-- ID: 5
+- id: 5
   name: Lukas Lukac
   description: konklone hjsbhj;klmzsdf sfdgbhj
   image: lukas.jpg
   web: google. com
+  githubUsername: enchanterio

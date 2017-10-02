@@ -15,7 +15,7 @@ layout: default
                 </a>
             </h2>
             {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-            <span class="post-meta post-date">{{ post.date | date: date_format }}</span>
+            <span class="post-date">{{ post.date | date: date_format }}</span>
 
             <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
 
@@ -28,7 +28,7 @@ layout: default
     <h2>Top Authors</h2>
 </section>
 <div class="inline-columns main-content authors-grid">
-    {% for author in site.data.authors%}
+    {% for author in site.data.users%}
         <div class="col-sm-3 col-sm-offset-0 col-xs-4 col-xs-offset-0">
             {% include site-authors.html author=author %}
         </div>
