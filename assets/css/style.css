@@ -664,8 +664,7 @@ h2 a{
 
 .main-content {
     word-wrap: break-word;
-    min-height: -webkit-calc(100vh - 530px);
-    min-height: calc(100vh - 530px)}
+}
   .main-content :first-child {
     /*margin-top: 0;*/
   }
@@ -816,16 +815,28 @@ h2 a{
   color: #819198; }
 
 /****************** Customization *******************/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
+a.project-name{
+  text-decoration: none;
+}
+a.project-name:hover, a.project-name:active, a.project-name:focus{
+    text-decoration: none;
+}
 .title-head{
   background: #FFF;
-  padding: 2em 3em;
+  padding: 32px 50px 0;
   max-width: 1600px;
   margin: 0 auto;
 }
 .menu-head{
     background: #FFF;
-    padding: 1rem 6rem;
+    padding: 1rem 50px;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -833,6 +844,11 @@ h2 a{
   color: #333;
   text-align: left;
   max-width: 1600px;
+}
+.title-head h1{
+  padding-bottom: 25px;
+  border-bottom: 2px solid #eff0f1;
+  width: fit-content;
 }
 hr.hr-head{
   height: 2px;
@@ -850,6 +866,21 @@ hr.hr-head{
 }
 .main-content{
     display: flow-root;
+}
+.title-head span {
+  float: right;
+  /* Safari */
+  -webkit-transform: rotate(7deg);
+  /* Firefox */
+  -moz-transform: rotate(7deg);
+  /* IE */
+  -ms-transform: rotate(7deg);
+  /* Opera */
+  -o-transform: rotate(7deg);
+  margin: -15px 60px 0 0;
+  font-size: 24px;
+  text-decoration: underline;
+  color: gray;
 }
 /*********************** Head **********************/
 .site-header .wrapper{
@@ -899,55 +930,11 @@ a.page-link:hover, a.page-link:active {
     font-size: 14px;
     color: gray;
 }
-@media screen and (max-width:768px) {
-    .site-nav {
-        position: absolute;
-        top: 9px;
-        right: 15px;
-        background-color: #fdfdfd;
-        border: 1px solid #e8e8e8;
-        border-radius: 5px;
-        text-align: right;
-    }
-    .menu-icon {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 26px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center;
-    }
-    svg path {
-        fill: #424242;
-    }
-    .site-nav input:checked ~ .trigger {
-        padding-top: 20px;
-        display: block;
-        padding-bottom: 5px;
-    }
-    .site-nav input ~ .trigger {
-        clear: both;
-        display: none;
-    }
-    .site-nav label[for="nav-trigger"] {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 36px;
-        z-index: 2;
-        cursor: pointer;
-    }
-    .site-nav .page-link {
-        text-align: center;
-        display: block;
-        padding: 10px 10px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    .site-nav .page-link:before {
-        content: none;
-    }
+.just-mobile{
+    display: none;
+}
+.no-mobile{
+    display: block;
 }
 
 .video-head {
@@ -968,7 +955,6 @@ a.page-link:hover, a.page-link:active {
     margin: 0 auto;
 }
 .video-head-interact{
-    display: block;
     visibility: visible;
     margin: 50px auto;
     width: 80px;
@@ -980,6 +966,7 @@ a.page-link:hover, a.page-link:active {
 }
 .video-head-interact:hover {
     opacity: 1.0;
+    cursor: pointer;
 }
 .click-here-arrow{
     margin: 50px 0 0 -26px;
@@ -1036,6 +1023,11 @@ a.page-link:hover, a.page-link:active {
     margin-left: 10px;
     color: #7d7d7d;
 }
+.color-bg button:hover{
+    background-color: #88b04b;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
 .color-bg h2{
     margin: 0;
 }
@@ -1044,6 +1036,9 @@ a.page-link:hover, a.page-link:active {
 }
 .authors-grid{
     display: block;
+}
+.authors-grid img{
+    margin: 15px 0;
 }
 .inline-columns > div {
     display: inline-block;
@@ -1057,9 +1052,13 @@ a.page-link:hover, a.page-link:active {
     width: 75px;
     height: 35px;
 }
+.svg-icon path:hover{
+  fill: #88B04C;
+}
 /*********************** Page Content *********************/
 .page-content .main-content{
     font-size: 1em;
+  display: flow-root;
 }
 .page-content h1{
     background-color: #88b04b;
@@ -1079,6 +1078,111 @@ a.page-link:hover, a.page-link:active {
     color: #FFF;
     text-decoration: none;
 }
+.mission-video{
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.mission-video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+hr.hr-mission {
+  height: 2px;
+  padding: 0;
+  max-width: 1620px;
+  background-color: #eff0f1;
+  border: 0;
+  margin: 35px auto;
+}
+.post-content h1{
+  background-color: transparent;
+  color: inherit;
+}
+/**************** Posts ****************/
+.authors-section{
+  width: 100%;
+  display: inline-block;
+}
+.post-meta {
+  width: 50%;
+  float: left;
+  margin: 20px 0;
+}
+.post-meta img{
+    max-width: 90px;
+    max-height: 90px;
+    float: left;
+    margin-right: 16px
+}
+.post-meta span{
+    font-weight: bold;
+}
+.post-meta p{
+    color: gray;
+    margin: 5px 0 12px;
+}.post-page hr{
+   margin: 32px 0;
+   background-color: #88b04b;
+}
+.contact-feedback{
+  border: 1px solid #88b04b;
+  background-color: #FFF;
+  color: #88b04b;
+  padding: 15px 20px;
+  font-size: 22px;
+  float: right;
+  margin-top: 16px;
+}
+.contact-feedback svg{
+  margin: 0 6px -8px;
+  width: 32px;
+  height: 32px;
+  fill: #88b04b;
+}
+.contact-feedback:hover, .contact-feedback:active, .contact-feedback:focus, .contact-feedback:hover svg, .contact-feedback:active svg, .contact-feedback:focus svg{
+  background-color: #88b04b;
+  color: #FFF;
+  text-decoration: none;
+  fill: #FFF;
+}
+.contact-feedback svg:hover{
+  fill: #FFF;
+}
+.post-feedback {
+  margin: 0 -15px 0 -15px;
+}
+.post-feedback h3{
+  float: left;
+}
+.post-tags{
+  text-align: left;
+  margin: 32px 0 0;
+}
+.class-tag{
+  border: 1px solid #88b04b;
+  background-color: #FFF;
+  color: #88b04b;
+  padding: 5px 10px;
+  margin: -5px 10px 5px;
+  text-align: center;
+  display: inline-block;
+}
+.post-tags p{
+  float: left;
+}
+.class-tag:hover, .class-tag:active, .class-tag:focus{
+  background-color: #88b04b;
+  color: #FFF;
+  text-decoration: none;
+}
+.post-collaborators .post-meta{
+  margin: 20px 0;
+}
 /************************** MailChimp **************************/
 #mc_embed_signup form {
     text-align: center !important;
@@ -1091,7 +1195,6 @@ a.page-link:hover, a.page-link:active {
     border: 2px solid #FFF !important;
     padding: 8px 15px !important;
     color: #7d7d7d;
-    min-width: 300px;
     width: auto !important;
 }
 #mc_embed_signup .button{
@@ -1118,4 +1221,105 @@ a.page-link:hover, a.page-link:active {
 }
 #mc_embed_signup #mce-success-response {
     color: #FFF;
+}
+#mc-embedded-subscribe:hover{
+  background-color: #88b04b !important;
+  border: 2px solid #FFF !important;
+  color: #FFF !important;
+}
+@media screen and (max-width: 768px){
+  #mc_embed_signup .button {
+    margin: 10px 0 0 0 !important;
+    width: 12.7em;
+  }
+
+}
+/********************* Responsivness **************************/
+@media screen and (max-width: 1124px) {
+  .title-head span{
+    display: none;
+  }
+}
+@media screen and (max-width:768px) {
+  .title-head h1 {
+    border-bottom: none;
+  }
+  .menu-head {
+    padding: 0;
+  }
+  .site-nav {
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        background-color: #fdfdfd;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        text-align: right;
+    }
+    .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+    svg path {
+        fill: #424242;
+    }
+    .site-nav input:checked ~ .trigger {
+        padding-top: 20px;
+        display: block;
+        padding-bottom: 5px;
+    }
+    .site-nav input ~ .trigger {
+        clear: both;
+        display: none;
+    }
+    .site-nav label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 36px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .site-nav .page-link {
+        text-align: center;
+        display: block;
+        padding: 10px 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .site-nav .page-link:before {
+        content: none;
+    }
+    .color-bg input {
+      min-width: 0px;
+    }
+    #mc_embed_signup_scroll {
+        display: block;
+    }
+    #mc_embed_signup .mc-field-group input {
+        margin: 0 auto;
+    }
+    .no-mobile{
+        display: none;
+    }
+    .just-mobile{
+        display: block;
+    }
+    .contact-feedback{
+      width: 100%;
+      text-align: center;
+    }
+}
+@media screen and (max-width: 480px){
+  .authors-grid > div {
+    width: 100%;
+  }
+  .post-meta {
+    width: 100%;
+  }
 }
