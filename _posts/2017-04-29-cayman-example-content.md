@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Example content"
+title: Example content
 image: Website-example.png
-author: Lukas Lukac
-authorImage: lukas.jpg
+tags: [PHP, JavaScript]
+authorId: 1
+contributorsIds: [1]
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

@@ -7,7 +7,6 @@ layout: default
     <section class="post-list">
         {% for post in site.posts %}
         <div class="col-md-4 col-sm-6 col-xs-12">
-
             <h2>
                 <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">
                     <img src="/image/post/{{ post.image }}">
@@ -18,7 +17,6 @@ layout: default
             <span class="post-date">{{ post.date | date: date_format }}</span>
 
             <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
-
         </div>
         {% endfor %}
     </section>

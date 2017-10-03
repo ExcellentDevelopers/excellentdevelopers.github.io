@@ -1,5 +1,5 @@
 - id: 1
   name: Lukas Lukac
   description: Founder of $this. Psychology, Blockchain && Motorbikes addict. Will be writing about DDD, MicroServices and Messaging Systems in order to gain more knowledge on the topics.
-  image: author/llukac.jpg
-  web: https://twitter.com/EnchanterIO
+  image: llukac.jpg
+  twitter: https://twitter.com/EnchanterIO

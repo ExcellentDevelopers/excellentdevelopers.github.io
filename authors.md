@@ -9,7 +9,6 @@ layout: default
         {% for author in site.data.users%}
             <div class="col-sm-3 col-sm-offset-0 col-xs-4 col-xs-offset-0">
                 {% include site-authors.html author=author %}
-                <a href="{{ author.web }}" class="contact-author" target="_blank">Contact</a>
             </div>
         {% endfor %}
     </div>

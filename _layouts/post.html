@@ -16,42 +16,42 @@ layout: default
         <div>
             {{ content }}
         </div>
-        {% if page.tags != empty %}
-            <div class="post-tags">
-                <p><b>Tags:</b></p>
-                {% for category in site.data.categories %}
-                    {% if page.tags contains category.id %}
-                        <a class="class-tag">{{ category.name }}</a>
-                    {% endif%}
-                {% endfor %}
-            </div>
-        {% endif %}
+
+        <div class="post-tags">
+            <p>
+                <b>Tags:</b>
+            </p>
+            {% for tag in page.tags %}
+                <a class="class-tag">{{ tag }}</a>
+            {% endfor %}
+        </div>
 
         <div class="authors-section">
             {% assign author = site.data.users | where:"id", page.authorId | first %}
             <div class="post-meta">
-                <img src="/image/{{ author.image }}">
+                <img src="/image/author/{{ author.image }}">
                 <span itemprop="author">
                 <span itemprop="name">{{ author.name }}</span>
                 <br><b>Author</b>
             </span>
                 <p>{{ author.description}}</p>
-                <a class="contact-author" href="{{ author.web}}">Contact</a>
+                <a class="contact-author" href="{{ author.web}}" target="_blank">Contact</a>
             </div>
-            {% if page.contributors %}
+
+            {% if page.contributorsIds.length > 0 %}
             <div class="post-collaborators">
-                {% for contributor in site.data.users%}
-                {% if page.contributors contains contributor.id %}
-                <div class="post-meta">
-                    <img src="/image/{{ author.image }}">
-                    <span itemprop="author">
-                        <span itemprop="name">{{ contributor.name }}</span>
-                        <br><b>Co-Author</b>
-                    </span>
-                    <p>{{ contributor.description}}</p>
-                    <a class="contact-author" href="{{ contributor.web}}">Contact</a>
-                </div>
-                {% endif%}
+                {% for user in site.data.users %}
+                    {% if page.contributorsIds contains user.id %}
+                    <div class="post-meta">
+                        <img src="/image/author/{{ author.image }}">
+                        <span itemprop="author">
+                            <span itemprop="name">{{ user.name }}</span>
+                            <br><b>Co-Author</b>
+                        </span>
+                        <p>{{ user.description}}</p>
+                        <a class="contact-author" href="{{ user.web}}" target="_blank">Contact</a>
+                    </div>
+                    {% endif%}
                 {% endfor %}
             </div>
             {% endif %}
