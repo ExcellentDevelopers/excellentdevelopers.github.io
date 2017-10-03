@@ -1,6 +1,6 @@
 /****************** Modal **********************/
-$(document).ready(function(){
-    $("#myModal").on("hidden.bs.modal",function(){
+$(document).ready(function() {
+    $("#myModal").on("hidden.bs.modal",function() {
         $("#iframeYoutube").attr("src","#");
     })
 
@@ -12,7 +12,7 @@ $(document).ready(function(){
     }
 })
 
-function changeVideo(vId){
+function changeVideo(vId) {
     var iframe = document.getElementById("iframeYoutube");
     iframe.src="https://www.youtube.com/embed/"+vId+"?autoplay=1";
 
@@ -22,7 +22,7 @@ function changeVideo(vId){
 /********************* Sent Subscription ********************/
 
 function sentCheck() {
-    var sentMessage = '<h3>Thanks, we will contact you personally very soon</h3>';
+    var sentMessage = '<h3>Thanks, we will contact you personally very soon!</h3>';
 
     $('.subscribe-section').empty();
     $('.subscribe-section').append(sentMessage);

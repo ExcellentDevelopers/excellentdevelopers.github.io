@@ -699,7 +699,7 @@ h2 a{
   .main-content code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.9rem;
+    font-size: 1em;
     color: #567482;
     background-color: #f3f6fa;
     border-radius: 0.3rem; }
@@ -707,7 +707,7 @@ h2 a{
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font: 1em Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: #567482;
     word-wrap: normal;
     background-color: #f3f6fa;
@@ -716,7 +716,6 @@ h2 a{
     .main-content pre > code {
       padding: 0;
       margin: 0;
-      font-size: 0.9rem;
       color: #567482;
       word-break: normal;
       white-space: pre;
@@ -731,7 +730,6 @@ h2 a{
   .main-content pre {
     padding: 0.8rem;
     overflow: auto;
-    font-size: 0.9rem;
     line-height: 1.45;
     border-radius: 0.3rem;
     -webkit-overflow-scrolling: touch; }
@@ -1057,7 +1055,7 @@ a.page-link:hover, a.page-link:active {
 }
 /*********************** Page Content *********************/
 .page-content .main-content{
-    font-size: 1em;
+  font-size: 1em;
   display: flow-root;
 }
 .page-content h1{
