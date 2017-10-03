@@ -1,34 +1,5 @@
 - id: 1
   name: Lukas Lukac
-  description: konklone hjsbhj;klmzsdf sfdgbhj
-  image: lukas.jpg
-  web: google.com
-  githubUsername: enchanterio
-
-- id: 2
-  name: Pepito Pelele
-  description: parkr dgfj dgftigujklfsdgt msfdg
-  image: lukas.jpg
-  web: google.com
-  githubUsername: enchanterio
-
-- id: 3
-  name: Lukas Lukac
-  description: konklone hjsbhj;klmzsdf sfdgbhj
-  image: lukas.jpg
-  web: google.com
-  githubUsername: enchanterio
-
-- id: 4
-  name: Pepito Pelele
-  description: parkr dgfj dgftigujklfsdgt msfdg
-  image: lukas.jpg
-  web: google.com
-  githubUsername: enchanterio
-
-- id: 5
-  name: Lukas Lukac
-  description: konklone hjsbhj;klmzsdf sfdgbhj
-  image: lukas.jpg
-  web: google. com
-  githubUsername: enchanterio
+  description: Founder of $this. Currently focused on DDD, MicroServices and Messaging Systems. Psychology, Cryptocurrency && Motorbikes addict.
+  image: author/llukac.jpg
+  web: https://twitter.com/EnchanterIO

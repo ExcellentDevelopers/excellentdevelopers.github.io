@@ -1,14 +1,8 @@
 - id: 1
-  name: excellent development
+  name: PHP
+
 - id: 2
-  name: php
+  name: JavaScript
+
 - id: 3
-  name: javascript
-- id: 4
-  name: react
-- id: 5
-  name: frontend
-- id: 6
-  name: backend
-- id: 7
-  name: front-back
+  name: Design
