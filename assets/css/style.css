@@ -636,8 +636,16 @@ h2 a{
       padding: 2rem 1rem; } }
 
 .project-name {
-  margin-top: 0;
-  margin-bottom: 0.1rem; }
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+.project-name.h1-get-to-know-us {
+    background: #e6e6e6;
+    color: #333;
+    padding: 5px;
+}
+
   @media screen and (min-width: 64em) {
     .project-name {
       font-size: 3.25rem; } }
@@ -936,12 +944,12 @@ a.page-link:hover, a.page-link:active {
 }
 
 .video-head {
-    background-image: url("/image/background-video.jpg");
+    background-image: url("/image/web/home_team_bg_image.jpg");
 /*    background-image: url("/image/Website-example.png");*/
     background-size: cover;
     background-position: center;
     background-blend-mode: color;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0);
     margin: 0;
     min-height: 350px;
     color: #88b04b;
@@ -959,15 +967,15 @@ a.page-link:hover, a.page-link:active {
     height: 80px;
     background: transparent url(http://www.garyvaynerchuk.com/wp-content/themes/garysixteen/assets/img/btns/btn-play-hover.png) no-repeat center center;
     background-size: 100% 100%;
-    opacity: 0.5;
+    opacity: 0.8;
     z-index: 410;
 }
 .video-head-interact:hover {
     opacity: 1.0;
     cursor: pointer;
 }
-.click-here-arrow{
-    margin: 50px 0 0 -26px;
+.click-here-arrow {
+    margin: 70px 0 0 -26px;
     width: 70px;
     float: right;
     -ms-transform: rotate(18deg);

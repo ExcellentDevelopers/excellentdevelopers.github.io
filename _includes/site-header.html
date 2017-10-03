@@ -9,10 +9,6 @@
             {% assign current_url = page.url %}
             {% assign page_paths = site.header_pages | default: default_paths %}
 
-            <!--{% if page.layout != 'home' %}
-            <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-            {% endif %}-->
-
             {% if page_paths %}
             <nav class="site-nav">
                 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -45,10 +41,7 @@
 </section>
 {% if page.layout == 'home' %}
     <section class="page-header video-head">
-        <h1 class="project-name">Get to Know Us!
-        <img class="click-here-arrow no-mobile" src="/image/green-arrow.png">
-        </h1>
-       <!-- <img class="click-here" src="/image/click-here-arrow-g.png">-->
+        <h1 class="project-name h1-get-to-know-us">Get to know us!<img class="click-here-arrow no-mobile" src="/image/web/green-arrow.png"></h1>
         <a id='open-introduction-video' class="video-head-interact gv-modal-ctrl gv-billboard-interact play-btn no-mobile" alt="Open Video"></a>
         <a href="https://youtu.be/ymq1WdGUcw8" target="_blank" class="video-head-interact gv-modal-ctrl gv-billboard-interact play-btn just-mobile" alt="Open Video"></a>
     </section>
