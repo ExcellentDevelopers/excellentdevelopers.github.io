@@ -27,7 +27,7 @@
                 </label>
 
                 <div class="trigger">
-                    <a class="page-link {% if page.layout == 'home' %}active-menu{% endif %}" href="/">Blogs</a>
+                    <a class="page-link {% if page.layout == 'home' %}active-menu{% endif %}" href="/">Articles</a>
                     {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}
                     {% if my_page.title %}
@@ -49,7 +49,7 @@
         <img class="click-here-arrow no-mobile" src="/image/green-arrow.png">
         </h1>
        <!-- <img class="click-here" src="/image/click-here-arrow-g.png">-->
-        <a onclick="changeVideo('nc3ou27HOdQ')" class="video-head-interact gv-modal-ctrl gv-billboard-interact play-btn no-mobile" alt="Open Video"></a>
+        <a id='open-introduction-video' class="video-head-interact gv-modal-ctrl gv-billboard-interact play-btn no-mobile" alt="Open Video"></a>
         <a href="https://youtu.be/ymq1WdGUcw8" target="_blank" class="video-head-interact gv-modal-ctrl gv-billboard-interact play-btn just-mobile" alt="Open Video"></a>
     </section>
 

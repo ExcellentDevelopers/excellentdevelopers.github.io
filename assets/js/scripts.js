@@ -2,31 +2,20 @@
 $(document).ready(function() {
     $("#myModal").on("hidden.bs.modal",function() {
         $("#iframeYoutube").attr("src","#");
-    })
+    });
 
-    if( $('mce-success-response').css('display') == 'block' ) {
-        $('#mc-field-group').css("display", "none");
-        $('#buttonSubscription').css("display", "none");
-    } else {
-        console.log('It did not equal block');
-    }
-})
+    $("#open-introduction-video").on('click', function() {
+        var iframe = document.getElementById("iframeYoutube");
+        iframe.src="https://www.youtube.com/embed/nc3ou27HOdQ?autoplay=1";
 
-function changeVideo(vId) {
-    var iframe = document.getElementById("iframeYoutube");
-    iframe.src="https://www.youtube.com/embed/"+vId+"?autoplay=1";
+        $("#myModal").modal("show");
+    });
 
-    $("#myModal").modal("show");
-}
-
-/********************* Sent Subscription ********************/
-
-function sentCheck() {
-    var sentMessage = '<h3>Thanks, we will contact you personally very soon!</h3>';
-
-    $('.subscribe-section').empty();
-    $('.subscribe-section').append(sentMessage);
-}
-
-
-/********************* Mailchimp ********************/
+    $("#signup-popup-button").on('click', function() {
+        // In order to be able to reopen the subscribe popup after is first time closed
+        document.cookie = "MCPopupClosed=no; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        document.cookie = "MCPopupSubscribed=no; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"829e1db7cd28c56d108eb426f","lid":"aaecaa4b78"}) });
+    });
+});

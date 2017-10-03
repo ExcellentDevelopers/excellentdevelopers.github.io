@@ -1178,12 +1178,29 @@ hr.hr-mission {
   color: #FFF;
   text-decoration: none;
 }
-.post-collaborators .post-meta{
+.post-collaborators .post-meta {
   margin: 20px 0;
 }
+
+.our-next-steps-list {
+    display: block;
+    width: 700px;
+    margin: 40px auto;
+    text-align: left;
+    list-style-type: upper-roman;
+}
+
+.our-next-steps-list li {
+    margin: 20px 0px;
+}
+
 /************************** MailChimp **************************/
 #mc_embed_signup form {
     text-align: center !important;
+}
+#mce-responses .response {
+    margin-top: 20px;
+    font-weight: bold;
 }
 #mc_embed_signup .mc-field-group input {
     background-color: rgba(255, 255, 255, 0.7);
@@ -1214,8 +1231,9 @@ hr.hr-mission {
 }
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
     background-color: transparent !important;
-    margin: 0 !important;
     color: #FFF !important;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 #mc_embed_signup #mce-success-response {
     color: #FFF;
@@ -1231,6 +1249,13 @@ hr.hr-mission {
     width: 12.7em;
   }
 
+  .our-next-steps-list {
+      width: 100%;
+  }
+
+  #signup-popup-button {
+      margin-top: 20px;
+  }
 }
 /********************* Responsivness **************************/
 @media screen and (max-width: 1124px) {
@@ -1319,5 +1344,8 @@ hr.hr-mission {
   }
   .post-meta {
     width: 100%;
+  }
+  .signup-popup-button {
+      margin-top: 20px;
   }
 }
