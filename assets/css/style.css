@@ -1009,7 +1009,7 @@ a.page-link:hover, a.page-link:active {
 
 .color-bg{
     background-color: #88b04b;
-    padding: 35px 0;
+    padding: 20px 0;
     text-align: center;
     margin: -1px 0;
     color: #FFF;
@@ -1068,7 +1068,7 @@ a.page-link:hover, a.page-link:active {
 }
 .page-content h1{
     background-color: #88b04b;
-    padding: 35px 0;
+    padding: 15px 0;
     text-align: center;
     margin: -1px 0;
     color: #FFF;
