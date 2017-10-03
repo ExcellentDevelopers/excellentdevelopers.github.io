@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example content
-image: Website-example.png
+thumbnailImage: be-happy-it-drives-people-crazy-fb-cover.jpg
 tags: [PHP, JavaScript]
 authorId: 1
 contributorsIds: [1]

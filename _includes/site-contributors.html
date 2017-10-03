@@ -1,0 +1,9 @@
+<div class="post-meta">
+	<img src="/image/author/{{ include.user.image }}">
+	<span itemprop="author">
+		<span itemprop="name">{{ include.user.name }}</span>
+		<br><b>{% if include.isAuthor %}{% else %}Co-{% endif %}Author</b>
+	</span>
+	<p>{{ include.user.description}}</p>
+	<a class="contact-author" href="{{ include.user.twitter}}" target="_blank">Twitter</a>
+</div>
