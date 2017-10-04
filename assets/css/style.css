@@ -1105,9 +1105,12 @@ hr.hr-mission {
   border: 0;
   margin: 35px auto;
 }
-.post-content h1{
+.post-content h1 {
   background-color: transparent;
   color: inherit;
+}
+.post-content img {
+    margin: 20px 0;
 }
 /**************** Posts ****************/
 .authors-section{
@@ -1123,7 +1126,8 @@ hr.hr-mission {
     max-width: 90px;
     max-height: 90px;
     float: left;
-    margin-right: 16px
+    margin-right: 16px;
+    margin-top: 0px;
 }
 .post-meta span{
     font-weight: bold;
