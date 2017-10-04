@@ -1202,6 +1202,10 @@ hr.hr-mission {
     margin: 20px 0px;
 }
 
+.contact-us-body {
+    min-height: 400px;
+}
+
 /************************** MailChimp **************************/
 #mc_embed_signup form {
     text-align: center !important;
