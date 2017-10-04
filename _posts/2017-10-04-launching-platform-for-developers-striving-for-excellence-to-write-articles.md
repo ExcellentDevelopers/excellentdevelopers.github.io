@@ -40,7 +40,7 @@ would at the end, miss the point. A mistake I would do (and actually did) a year
 
 ## Our mission statement, plans and goals
 
-> To build respectful community of developers, regardless the programming language, who
+> To build a respectful community of developers, regardless the programming language, who
 strive for excellence, professionalism and value beautiful elegant solutions
 for core business requirements.
 
@@ -52,7 +52,7 @@ Our main goal is to individually help every single of our readers and authors
 in their career path and provide a platform that gets YOU, one step closer to excellence.
 
 Our plan is to create an atmosphere of trust and growth by encouraging members
-to write articles as well to invest their time in others by providing polite,
+to write articles as well to invest their time in others by providing polite and
 valuable feedback.
 
 ExcellentDevelopers platform is running on a GitHub pages engine which means it's entirely public!
