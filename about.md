@@ -10,7 +10,7 @@ layout: default
             No one is perfect. All though, together we can be excellent.
         </p>
         <p>
-            Our platform aims to collect developers from all over the world, who like to share their knowledge by
+            Our platform aims to connect developers from all over the world, who like to share their knowledge by
             writing technical articles with their peers willing to provide constructive feedback and directly
             suggest improvements by submitting Pull Requests against authors's articles using GIT.
 

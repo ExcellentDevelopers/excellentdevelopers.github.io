@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Example content
-thumbnailImage: be-happy-it-drives-people-crazy-fb-cover.jpg
+thumbnailImageRelativeUrl: image/post/be-happy-it-drives-people-crazy-fb-cover.jpg
 tags: [PHP, JavaScript]
 authorId: 1
+twitterCreator: EnchanterIO
 contributorsIds: [1]
 ---
 

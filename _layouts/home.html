@@ -9,7 +9,7 @@ layout: default
         <div class="col-md-4 col-sm-6 col-xs-12">
             <h2>
                 <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">
-                    <img src="/image/post/{{ post.thumbnailImage }}">
+                    <img src="/{{ post.thumbnailImageRelativeUrl }}">
                     {{ post.title | escape }}
                 </a>
             </h2>
