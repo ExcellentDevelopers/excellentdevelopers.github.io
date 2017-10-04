@@ -36,7 +36,7 @@ instead, a very casual, personal one achieving the same point.
 I will write an article later on how a quick feedback helped me prevent spending tens of hours on a video that
 would at the end, miss the point. A mistake I would do (and actually did) a year ago.
 
-<iframe width="100%" height="700" src="https://www.youtube.com/embed/nc3ou27HOdQ" frameborder="0" allowfullscreen></iframe>
+<iframe class='youtube-video' src="https://www.youtube.com/embed/nc3ou27HOdQ" frameborder="0" allowfullscreen></iframe>
 
 ## Our mission statement, plans and goals
 

@@ -1066,9 +1066,9 @@ a.page-link:hover, a.page-link:active {
   font-size: 1em;
   display: flow-root;
 }
-.page-content h1{
+.page-content h1 {
     background-color: #88b04b;
-    padding: 15px 0;
+    padding: 15px 300px;
     text-align: center;
     margin: -1px 0;
     color: #FFF;
@@ -1106,10 +1106,9 @@ hr.hr-mission {
   margin: 35px auto;
 }
 .post-content h1 {
-  background-color: transparent;
-  color: inherit;
 }
 .post-content img {
+    width: 50%;
     margin: 20px 0;
 }
 /**************** Posts ****************/
@@ -1219,6 +1218,15 @@ hr.hr-mission {
     margin-left: 30px;
 }
 
+.youtube-video {
+    width: 50%;
+    height: 350px;
+}
+
+.mission-infographic {
+    width: 50%;
+}
+
 /************************** MailChimp **************************/
 #mc_embed_signup form {
     text-align: center !important;
@@ -1284,11 +1292,23 @@ hr.hr-mission {
 }
 /********************* Responsivness **************************/
 @media screen and (max-width: 1124px) {
-  .title-head span{
+  .title-head span {
     display: none;
+  }
+  .page-content h1 {
+      padding: 15px 30px;
   }
 }
 @media screen and (max-width:768px) {
+
+  .youtube-video {
+      width: 100%;
+  }
+
+  .post-content img, .mission-infographic {
+      width: 100%;
+  }
+
   .title-head h1 {
     border-bottom: none;
   }

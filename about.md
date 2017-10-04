@@ -31,9 +31,9 @@ layout: default
         </p>
     </div>
     <hr class="hr-mission">
-    <div class="mission-video">
-        <iframe width="100%" height="700" src="https://www.youtube.com/embed/nc3ou27HOdQ" frameborder="0" allowfullscreen></iframe>
+    <div>
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/nc3ou27HOdQ" frameborder="0" allowfullscreen></iframe>
     </div>
     <hr class="hr-mission">
-    <img src="/image/web/excellent_developers_about_us.jpg">
+    <img class="mission-infographic" src="/image/web/excellent_developers_about_us.jpg">
 </div>
