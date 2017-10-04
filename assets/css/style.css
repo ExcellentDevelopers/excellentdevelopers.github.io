@@ -1210,6 +1210,15 @@ hr.hr-mission {
     min-height: 400px;
 }
 
+.share-page {
+    text-align: center;
+}
+
+.share-page a {
+    font-weight: 700;
+    margin-left: 30px;
+}
+
 /************************** MailChimp **************************/
 #mc_embed_signup form {
     text-align: center !important;
