@@ -636,6 +636,7 @@ h2 a{
       padding: 2rem 1rem; } }
 
 .project-name {
+    width: 300px;
     margin-top: 0;
     margin-bottom: 0.1rem;
 }
@@ -854,6 +855,10 @@ a.project-name:hover, a.project-name:active, a.project-name:focus{
 .title-head h1{
   padding-bottom: 25px;
   border-bottom: 2px solid #eff0f1;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: -ms-fit-content;
+  width: -o-fit-content;
   width: fit-content;
 }
 hr.hr-head{
