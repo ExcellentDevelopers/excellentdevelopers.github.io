@@ -5,3 +5,5 @@ theme: # leave it empty
 google_analytics: UA-107511380-1
 twitter:
     username: ExcellentDevs
+gems:
+  - jekyll-redirect-from
